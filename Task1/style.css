@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.carousel{
+    font-family: "Madimi One", sans-serif;
+    position: relative;
+    border: 2px solid black;
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: medium;
+}
+.carousel > .prev,.next{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel> .prev{
+    left: 0;
+}
+.carousel > .next{
+    right: 0;
+}
+.slide-img>button{
+    background-color: white;
+    border: none;
+}
+.slide-img>button >img{
+    width: 5vw;
+}
+.product-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-area> .headline{
+    font-size: 2em;
+}
+.product-area> .title{
+    margin-top: 2vh;
+    font-size: 1.5em;
+}
+.product-area> .price{
+    margin-top: 4vh;
+    font-size: 1.2em;
+}
+#pd-img{
+    height: 100%;
+    width: 40vw;
+}
+#dots{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+}
+.dot{
+    width: 1em;
+    height: 1em;
+    background-color: rgb(155, 150, 150);
+    border-radius: 50%;
+    margin: 2px;
+}
+.curr-dot{
+    background-color: black;
+}
+
+
+@media screen and (max-width:750px){
+    .carousel{
+        flex-direction: column;
+        align-items: center;
+    }
+}
