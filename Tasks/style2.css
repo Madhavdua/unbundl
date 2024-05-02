@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: "Madimi One", sans-serif;
+    background-color: aliceblue;
+    font-size: larger;
+    padding: 1rem;
+}
+#total{
+    font-family: "Madimi One", sans-serif;
+    position: fixed;
+    top: 0;
+    padding: 1rem;
+    right: 0;
+    background-color: aliceblue;
+    font-size: larger;
+}
+.shop{
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.choc{
+    /* border: 1px solid black; */
+    width: 13rem;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+}
+.choc >img{
+    height: 200px;
+    width: 100%;;
+}
+.choc-price{
+    font-size: larger;
+    text-align: center;
+    margin: 4px;
+}
+.get-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.get-btn >button{
+    border: none;
+    height: 1.5rem;
+    width: 2rem;
+    margin: 4px;
+    font-size: large;
+}
+.disable{
+    display: none;
+}
+.count{
+    align-self: center;
+}
